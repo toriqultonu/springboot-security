@@ -18,7 +18,7 @@ import java.util.Map;
 @Service
 public class JwtService {
 
-    private static final String SECRET_KEY = "7d8ff7bf10bcbf60747f7db963452a91e3d18523ae1d2c24096a21b66f0e17af";
+    private static final String SECRET_KEY = "404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970";
 
     public String extractUsername(String token) {
 
@@ -54,7 +54,7 @@ public class JwtService {
     }
 
     private boolean isTokenExpired(String token) {
-        return extractExpiration(token).before(new Date())
+        return extractExpiration(token).before(new Date());
     }
 
     private Date extractExpiration(String token) {
